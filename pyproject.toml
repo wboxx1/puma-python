@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "puma-python"
+version = "0.1.0"
+description = "Powerfull Universal Measurement Automation"
+authors = ["Will Boxx <wboxx1@gmail.com>"]
+license = "GPL-3.0"
+
+readme = "README.rst"
+
+repository = "https://github.com/wboxx1/puma-python"
+
+homepage = "https://wboxx1.github.io/puma-python"
+
+
+packages = [
+    { include = "puma_python", from = "src" },
+]
+
+[tool.poetry.dependencies]
+
+[tool.poetry.dev-dependencies]
+bump2version = "^0.5.3"
+wheel = "^0.32.1"
+watchdog = "^0.9.0"
+flake8 = "^3.5.0"
+tox = "^3.5.2"
+coverage = "^4.5.1"
+Sphinx = "^1.8.1"
+twine = "^1.12.1"
+pytest = "^3.8.2"
+pytest-runner = "^4.2"
+setuptools = "^40.5.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
